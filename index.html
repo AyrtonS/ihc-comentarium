@@ -15,30 +15,40 @@
 
 
 <body>
-	<div class="container">
+
+	<div class="superior">
+		<a href="#">English <img id="usa_icon" src="usa_image_icon.png" width="20px" height="20px"> </a>
+		<a id="login" href="#"><span class="glyphicon glyphicon-log-in" aria-hidden="true"></span>&nbsp Login / Cadastre-se </a>
+
+	</div>
+
+
 			<div class="top_menu">
 			
-				<h2>Minha conta</h2>
+				<ul>
+					
+					<div class="search">
+						<form >
+  							<input class="input-search" type="text" name="Busca" placeholder="Busque aqui...">
+  							<input type="submit" value="Buscar">
+						</form> 
+					</div>
+					<li><img src="logo.gif" width="150px" height="60px"></li>
+  					<li><a href="#"> <span class="glyphicon glyphicon-home" aria-hidden="true"></span> Início</a></li>
+  					<li><a href="#"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span> Comentar um site</a></li>
+  					<li><a href="#"><span class="glyphicon glyphicon-list" aria-hidden="true"></span> Categorias</a></li>
+  					<li>
+ 					 <select name="cars">
+    					<option value="meu blog"><a href="#">Meu Blog</a></option>
+    					<option value="gerenciar meus sites"><a href="#">Gerenciar meus sites</a></option>
+       					<option value="alterar minhas configurações"><a href="#">Alterar minhas configurações</a></option>
+  					</select>
+  					</li>
 
-<ul>
-	<form action="/action_page.php">
- 
-  <input type="text" name="Busca" >
-  <br>
-  <input type="submit" value="Buscar">
-</form> 
-<form action="/action_page.php">
-</form>
-  <li>Início</li>
-  <li>Comentar um site </li>
 
-  <select name="cars">
-    <option value="meu blog">Meu Blog</option>
-    <option value="gerenciar meus sites">Gerenciar meus sites</option>
-       <option value="alterar minhas configurações">Alterar minhas configurações</option>
-  </select>
-
-</ul>  
+  				</ul>  
+  				<hr>
+			
 			</div>	
 			
 			<div class="content">
@@ -50,8 +60,7 @@
 				RODAPÉ
 			
 			</div>	
-		
-	</div>	
+			
 	
 	
 </body>	

@@ -3,4 +3,66 @@
 margin:0;
 padding:0;
 font-family: 'Dosis', sans-serif;
+
+
 }
+
+.superior{
+
+	color: #fff;
+	text-align: right;
+	margin: 1%;
+}
+
+.superior #login{
+	padding: 1.0%;
+	background: #000;
+	color: #fff;
+	font-size: 1.0em;
+	
+}
+
+.superior #login:hover{
+	background: #eee;
+	text-decoration: none;
+	color: #000;
+}
+
+.superior #usa_icon{
+	margin-right: 2%;
+}
+
+.top_menu{
+	font-size: 1.2em;
+}
+
+
+.top_menu ul{
+	padding: 2%;
+}
+.top_menu ul li{
+	display: inline;
+	padding: 1.5%;
+}
+.search{
+	float:right;
+	margin-top: 1.1%;
+}
+
+.top_menu a{
+color: #000;
+text-decoration: none;
+}
+.input-search{
+width: 250px;
+border:1px solid #ccc;
+border-radius: 2px;
+
+}
+
+.top_menu a:hover{
+color:blue;
+text-decoration: overline;
+}
+
+
