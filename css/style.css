@@ -7,6 +7,23 @@ font-family: 'Dosis', sans-serif;
 
 }
 
+
+#maiuscula,#minuscula{
+	background: transparent;
+	color: black;
+	font-style: bold;
+	border:1px solid #ccc;
+	font-size: 1.3em;
+	padding: 0.2%;
+	
+}
+
+#maiuscula:hover,#minuscula:hover{
+	background: #000;
+	color: #fff;
+	border: none;
+}	
+
 .superior{
 
 	color: #fff;
