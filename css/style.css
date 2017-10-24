@@ -50,7 +50,7 @@ font-family: 'Dosis', sans-serif;
 }
 
 .top_menu{
-	font-size: 1.2em;
+	font-size: 1.1em;
 }
 
 
@@ -81,5 +81,52 @@ border-radius: 2px;
 color:blue;
 text-decoration: overline;
 }
+
+
+.comente {
+text-align: center;
+
+}
+
+.caixaLink {
+	margin: 5.0%;
+
+}
+
+.input-link {
+	padding: 0.7%;
+	width: 500px;
+	border-radius: 5px;
+	border: 1px solid #bbb;
+
+
+
+}
+
+.botao {
+	padding: 0.7%;
+	border-radius: 5px;
+	border: 1px solid #bbb;
+
+}
+.botao:hover {
+	background: blue;
+	color: #fff;
+}
+
+.search #botaobusca:hover {
+	background: blue;
+	color: #fff;
+
+
+
+}
+
+
+
+
+
+
+
 
 
