@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="UTF-8" />
+
+
+<link rel="stylesheet" href="css/bootstrap-3.3.7-dist/css/bootstrap.css" />
+<link rel="stylesheet" href="css/style.css" />
+<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet"> 
+	
+<script src="js/jquery-3.2.1.js"></script>
+<script src="js/functions.js"></script>
+<script type="text/javascript">
+	
+	$(document).ready(function(){
+
+		var i = 1+0.5;
+		$("#maiuscula").click(function(){
+			$(".body").css({"font-size": i+"em"});
+			i = i + 0.1;
+		});
+
+		$("#minuscula").click(function(){
+			i = i-0.1;
+			$(".body").css({"font-size": i+"em"})
+
+		});
+
+
+	});
+
+	
+
+</script>	
+	
+</head>	
+
+
+<body class="body">
+
+	<div class="superior">
+	
+			<button id="maiuscula" >A +</button>
+			<button id="minuscula" >A -</button> 
+		
+		<a href="#">English <img id="usa_icon" src="usa_image_icon.png" width="20px" height="20px"> </a>
+		<a id="login" href="#"><span class="glyphicon glyphicon-log-in" aria-hidden="true"></span>&nbsp Login / Cadastre-se </a>
+
+	</div>
+
+
+			<div class="top_menu">
+			
+				<ul>
+					
+					<div class="search">
+						<form >
+  							<input id="searchTextField" onkeypress="validateLength('searchTextField')" class="input-search" type="text" name="Busca" placeholder="Busque aqui..." maxlength="255" required>
+  							<input id="botaobusca" type="submit" value="Buscar">
+						</form> 
+					</div>
+					<li><img src="logo.gif" width="150px" height="60px"></li>
+  					<li ><a  href="index.html" > <span class="glyphicon glyphicon-home" aria-hidden="true"></span> Início</a></li>
+	  				<li><a href="#"><span class="glyphicon glyphicon-book" aria-hidden="true"></span> Quem Somos </a></li>
+
+  					<li><a href="#"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span> Comentar um site</a></li>
+  					<li><a href="#"><span class="glyphicon glyphicon-list" aria-hidden="true"></span> Categorias</a></li>
+  					<li><a id="active" href="#"><span class="glyphicon glyphicon-usd" aria-hidden="true"></span> Promova seu site</a></li>
+  					<li>
+ 					 <!--
+ 					 <select name="cars">
+    					<option value="meu blog"><a href="#">Meu Blog</a></option>
+    					<option value="gerenciar meus sites"><a href="#">Gerenciar meus sites</a></option>
+       					<option value="alterar minhas configurações"><a href="#">Alterar minhas configurações</a></option>
+  					</select>
+  					-->
+  					</li>
+
+
+  				</ul>  
+  				<hr>
+			
+			</div>	<!-- FIM DO TOP_MENU -->
+
+
+			<div class="content">
+
+				<div class="container">
+
+					<h2>Promova seu site</h2>
+				
+					<p> O selo do Comentarium permite que os visitantes façam comentários sobre o página onde ele é implantado. Isso cria um canal de interação com eles e 	aumenta o destaque de seu site no Comentarium, gerando mais visitas. Você pode implantar o selo em quantas páginas quiser. Caso a página ainda não 	esteja indexada pelo Comentarium, ela o será no momento em que receber o primeiro comentário.</p>	
+	
+						<p>Você pode moderar os comentários efetuados. Basta se cadastrar indicar o endereço dos sites que você administra.</p>
+	
+						<br><br>
+	 	
+						<h2>Como usar o selo</h2>
+	
+						<p>Basta escolher um dos códigos abaixo de acordo com o modelo do selo que você quiser utilizar e inserir em seu site, diretamente no código-fonte, no 	local onde o selo irá aparecer.</p>	
+	
+						<br>
+	
+						 <h4> Atenção: </h4>
+						 <p>O selo identifica e promove automaticamente o endereço do site onde ele for implantado. Cada página do seu site ou blog que tiver o selo, receberá 	separadamente os comentários postados por seus visitantes. As páginas que recebem os comentários serão automaticamente cadastradas no site 	Comentarium, caso ainda não estejam. </p>
+						 <br>
+						 <div class="row">
+						 	<div class="col-md-6">
+						 		<h3 style="text-align: center">Botões de Comentário</h3><br>
+						 		<div class="row">
+
+						 			<div class="col-md-6">
+						 				<div class="innerContent">
+						 					<img src="images/btn-16.png" />
+						 				</div>
+						 			</div>	
+						    		<div class="col-md-6">
+										<div class="innerContent">
+						 					<textarea class="textarea"><a target="_blank" href="http://www.comentarium.com.br/?comente=1"><img src="http://www.comentarium.com.br/images/btn-16.png" title="Comentar/adicionar no Comentarium" width="16" height="16" border="0"/></a>
+						 					</textarea>
+						 				</div>
+						 			</div>	
+
+						 		</div>
+
+
+						 		<div class="row">
+
+						 			<div class="col-md-6">
+						 				<div class="innerContent">
+						 					<img src="images/sel80x15.png" />
+						 				</div>
+						 			</div>	
+						    		<div class="col-md-6">
+										<div class="innerContent">
+						 					<textarea class="textarea"><a target="_blank" href="http://www.comentarium.com.br/?comente=1"><img src="http://www.comentarium.com.br/images/sel80x15.png" title="Comentar/adicionar no Comentarium" width="80" height="15" border="0"/></a>
+
+
+						 					</textarea>
+						 				</div>
+						 			</div>	
+
+						 		</div>
+
+
+						 		<div class="row">
+
+						 			<div class="col-md-6">
+						 				<div class="innerContent">
+						 					<img src="images/btn-peq.png" />
+						 				</div>
+						 			</div>	
+						    		<div class="col-md-6">
+										<div class="innerContent">
+						 					<textarea class="textarea"><a target="_blank" href="http://www.comentarium.com.br/?comente=1"><img src="http://www.comentarium.com.br/images/btn-peq.png" title="Comentar/adicionar no Comentarium" width="78" height="32" border="0"/></a>
+						 					</textarea>
+						 				</div>
+						 			</div>	
+
+						 		</div>
+
+
+						 		<div class="row">
+
+						 			<div class="col-md-6">
+						 				<div class="innerContent">
+						 					<img src="images/btn-comentarium.png" />
+						 				</div>
+						 			</div>	
+						    		<div class="col-md-6">
+										<div class="innerContent">
+						 					<textarea class="textarea"><a target="_blank" href="http://www.comentarium.com.br/?comente=1"><img src="http://www.comentarium.com.br/images/btn-comentarium.png"> </a>
+						 					</textarea>
+						 				</div>
+						 			</div>	
+
+						 		</div>
+
+
+						 	</div> <!-- FIM DA PRIMEIRA COLUNA -->
+
+
+
+							<h3 style="text-align: center">Botões de Destaque</h3><br>
+
+						 	<div class="col-md-6">
+
+						 		<div class="row">
+
+						 			<div class="col-md-6">
+						 				<div class="innerContent">
+						 					<img src="images/bt-merece3.png" />
+						 				</div>
+						 			</div>	
+						    		<div class="col-md-6">
+										<div class="innerContent">
+						 					<textarea class="textarea"><a target="_blank" href="http://www.comentarium.com.br/?share1=1"><img src="http://www.comentarium.com.br/images/bt-merece3.png" border="0"/></a>
+						 					</textarea>
+						 				</div>
+						 			</div>	
+
+						 		</div>
+
+
+						 		<div class="row">
+
+						 			<div class="col-md-6">
+						 				<div class="innerContent">
+						 					<img src="images/bt-merece-red2.png" />
+						 				</div>
+						 			</div>	
+						    		<div class="col-md-6">
+										<div class="innerContent">
+						 					<textarea class="textarea"><a target="_blank" href="http://www.comentarium.com.br/?share1=1"><img src="http://www.comentarium.com.br/proc.jsp?actionID=425" title="Merece destaque" border="0"/></a>
+						 					</textarea>
+						 				</div>
+						 			</div>	
+
+						 		</div>
+
+
+
+						 	</div> <!-- FIM DA SEGUNDA COLUNA -->
+
+						 </div> <!-- FIM DA LINHA --> 
+
+				</div> <!-- FIM DO CONTAINER -->
+
+			</div> <!-- FIM DO CONTENT -->
+
+
+			<div class="footer">
+				RODAPÉ
+			
+			</div>
+
+
+</body>
+</html>			
