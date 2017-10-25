@@ -10,28 +10,38 @@
 <link rel="stylesheet" href="css/style.css" />
 <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet"> 
 	
+<script src="js/jquery-3.2.1.js"></script>
 
 <script type="text/javascript">
 	
-	function letraMaior(){
-		alert("Aqui aumenta")
-	}
+	$(document).ready(function(){
 
-	function letraMenor(){
-		alert("Aqui diminui")
-	}
+		var i = 1+0.5;
+		$("#maiuscula").click(function(){
+			$(".body").css({"font-size": i+"em"});
+			i = i + 0.1;
+		});
+
+		$("#minuscula").click(function(){
+			i = i-0.1;
+			$(".body").css({"font-size": i+"em"})
+
+		});
+
+
+	});
 
 </script>	
 	
 </head>	
 
 
-<body>
+<body class="body">
 
 	<div class="superior">
 	
-			<button id="maiuscula" onclick="letraMaior()">A +</button>
-			<button id="minuscula" onclick="letraMenor()">A -</button> 
+			<button id="maiuscula" >A +</button>
+			<button id="minuscula" >A -</button> 
 		
 		<a href="#">English <img id="usa_icon" src="usa_image_icon.png" width="20px" height="20px"> </a>
 		<a id="login" href="#"><span class="glyphicon glyphicon-log-in" aria-hidden="true"></span>&nbsp Login / Cadastre-se </a>
