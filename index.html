@@ -11,7 +11,7 @@
 <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet"> 
 	
 <script src="js/jquery-3.2.1.js"></script>
-
+<script src="js/functions.js"></script>
 <script type="text/javascript">
 	
 	$(document).ready(function(){
@@ -30,6 +30,8 @@
 
 
 	});
+
+	
 
 </script>	
 	
@@ -55,7 +57,7 @@
 					
 					<div class="search">
 						<form >
-  							<input class="input-search" type="text" name="Busca" placeholder="Busque aqui...">
+  							<input id="searchTextField" onkeypress="validateLength('searchTextField')" class="input-search" type="text" name="Busca" placeholder="Busque aqui..." maxlength="255" required>
   							<input id="botaobusca" type="submit" value="Buscar">
 						</form> 
 					</div>
@@ -95,7 +97,7 @@
 					   	<div class="caixaLink"> 
 					   		<form >
 					   			<span class="glyphicon glyphicon-link" aria-hidden="true"></span>
-  							<input class="input-link" type="text" name="Link" placeholder="http://">
+  							<input class="input-link" type="text" name="Link" placeholder="http://" required>
   							<input class="botao" type="submit" value="Incluir">
 
 						</form> 
