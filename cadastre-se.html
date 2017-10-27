@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="UTF-8" />
+
+
+<link rel="stylesheet" href="css/bootstrap-3.3.7-dist/css/bootstrap.css" />
+<link rel="stylesheet" href="css/style.css" />
+<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet"> 
+	
+<script src="js/jquery-3.2.1.js"></script>
+<script src="js/functions.js"></script>
+<script type="text/javascript">
+	
+	$(document).ready(function(){
+
+		var i = 1+0.5;
+		$("#maiuscula").click(function(){
+			$(".body").css({"font-size": i+"em"});
+			i = i + 0.1;
+		});
+
+		$("#minuscula").click(function(){
+			i = i-0.1;
+			$(".body").css({"font-size": i+"em"})
+
+		});
+
+
+	});
+
+	
+
+</script>	
+	
+</head>	
+
+
+<body class="body">
+
+	<div class="superior">
+	
+			<button id="maiuscula" >A +</button>
+			<button id="minuscula" >A -</button> 
+		
+		<a href="#">English <img id="usa_icon" src="usa_image_icon.png" width="20px" height="20px"> </a>
+		<a id="login" href="#"><span class="glyphicon glyphicon-log-in" aria-hidden="true"></span>&nbsp Login / Cadastre-se </a>
+
+	</div>
+
+
+			<div class="top_menu">
+			
+				<ul>
+					
+					<div class="search">
+						<form >
+  							<input id="searchTextField" onkeypress="validateLength('searchTextField')" class="input-search" type="text" name="Busca" placeholder="Busque aqui..." maxlength="255" required>
+  							<input id="botaobusca" type="submit" value="Buscar">
+						</form> 
+					</div>
+					<li><img src="logo.gif" width="150px" height="60px"></li>
+  					<li ><a  href="index.html" > <span class="glyphicon glyphicon-home" aria-hidden="true"></span> Início</a></li>
+	  				<li><a href="#"><span class="glyphicon glyphicon-book" aria-hidden="true"></span> Quem Somos </a></li>
+
+  					<li><a href="#"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span> Comentar um site</a></li>
+  					<li><a href="#"><span class="glyphicon glyphicon-list" aria-hidden="true"></span> Categorias</a></li>
+  					<li><a href="promote.html"><span class="glyphicon glyphicon-usd" aria-hidden="true"></span> Promova seu site</a></li>
+  					<li><a id="active" href="contatos.html"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Contato</a></li>
+
+
+  					<li>
+  					<!--
+ 					 <select name="cars">
+    					<option value="meu blog"><a href="#">Meu Blog</a></option>
+    					<option value="gerenciar meus sites"><a href="#">Gerenciar meus sites</a></option>
+       					<option value="alterar minhas configurações"><a href="#">Alterar minhas configurações</a></option>
+  					</select>
+  					-->
+  					</li>
+
+
+  				</ul>  
+  				<hr>
+			
+			</div>
+			<div class="content">
+			<div class="container">
+				<h2>Casdastre-se</h2>
+				<p>Para se cadastrar basta preencher os dados do formulário abaixo.</p>
+				<br>
+				<p style="color:red;">Os campos marcados com (*) são obrigatórios</p>
+				<form>
+				
+				*Name<br>
+				<input type="text" name="Nome">
+				<br>
+				*Login<br>
+				<input type="text" name="Login">
+				<br>
+				*Senha<br>
+				<input type="password" name="Senha">
+				<br>
+				*Confirmação da senha<br>
+				<input type="password" name="Senha">
+				<br>
+				*E-mail<br>
+				<input type="email" name="E-mail">
+				<br>
+				sexo:<br>
+				<input type="radio" name="gender" value="masculino"> masculino<br>
+				<input type="radio" name="gender" value="feminino"> feminino<br>
+				Avatar:<br>
+				<input type="file"><br>
+				Cidade:<br>
+				<input type="text" name="Nome">
+				<br>
+				Estado:<br>
+				<select class="forms-textfield-1" name="state" status="blocked">
+
+					<option value="0" >Nenhum</option>
+
+					<option value="1" >Acre</option>
+
+					<option value="2" >Alagoas</option>
+
+					<option value="3" >Amap&aacute;</option>
+
+					<option value="4" >Amazonas</option>
+
+					<option value="5" >Bahia</option>
+
+					<option value="6" >Cear&aacute;</option>
+
+					<option value="7" >Distrito Federal</option>
+
+					<option value="8" >Esp&iacute;rito Santo</option>
+
+					<option value="9" >G&oacute;ias</option>
+
+					<option value="10" >Maranh&atilde;o</option>
+
+					<option value="11" >Mato Grosso</option>
+
+					<option value="12" >Mato Grosso do Sul</option>
+
+					<option value="13" >Minas Gerais</option>
+
+					<option value="14" >Par&aacute;</option>
+
+					<option value="15" >Para&iacute;ba</option>
+
+					<option value="16" >Paran&aacute;</option>
+
+					<option value="17" >Pernambuco</option>
+
+					<option value="18" >Piau&iacute;</option>
+
+					<option value="19" >Rio de Janeiro</option>
+
+					<option value="20" >Rio Grande do Norte</option>
+
+					<option value="21" >Rio Grande do Sul</option>
+
+					<option value="22" >Rond&ocirc;nia</option>
+
+					<option value="23" >Roraima</option>
+
+					<option value="24" >Tocantins</option>
+
+					<option value="25" >Santa Catarina</option>
+
+					<option value="26" >S&atilde;o Paulo</option>
+
+					<option value="27" >Sergipe</option>
+					
+							
+				</select>
+
+				<br><br>
+				<input type="submit" value="Cadastrar">
+				<br>
+				<a>Política de privacidade</a>
+				<br><br>
+				<b>Observações:</b>
+				<br><br>
+				<p>1- Em qualquer momento, você poderá alterar ou até mesmo remover o seu cadastro do Comentarium.com.br. 
+				Isso inclui as configurações de recebimento de boletins, notificações e demais informações armazenadas. </p>
+				<br><br>
+				<p>2- Para maiores informações sobre a política de privacidade do Comentarium.com.br, <a>clique aqui.</a></p>
+				<br>
+				</form>
+				
+				
+				
+				
+				</div>
+			</div>
+				
+</body>
+</html>
+
