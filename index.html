@@ -10,6 +10,7 @@
 <link rel="stylesheet" href="css/style.css" />
 <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet"> 
 	
+<script src="js/angular.js"></script>	
 <script src="js/jquery-3.2.1.js"></script>
 <script src="js/functions.js"></script>
 <script type="text/javascript">
@@ -28,101 +29,220 @@
 
 		});
 
+		$("#postlink").click(function(){
+			$("#menu").css({"opacity":"0.1"})
+			$("#mainContent").css({"opacity":"0.1"})
+		});
+
+	
+		$("#mainContent").click(function(){
+			$("#menu").css({"opacity":"1"})
+			$("#mainContent").css({"opacity":"1"})
+		});
+
+		$("#menu").click(function(){
+			$("#menu").css({"opacity":"1"})
+			$("#mainContent").css({"opacity":"1"})
+		});
+
 
 	});
 
-	
+
 
 </script>	
-	
+
+
+
 </head>	
 
 
-<body class="body">
+<body class="body" ng-app="">
+  <div id="menu" ng-include="'menu.html'"></div>
 
-	<div class="superior">
-	
-			<button id="maiuscula" >A +</button>
-			<button id="minuscula" >A -</button> 
-		
-		<a href="#">English <img id="usa_icon" src="usa_image_icon.png" width="20px" height="20px"> </a>
-		<a id="login" href="#"><span class="glyphicon glyphicon-log-in" aria-hidden="true"></span>&nbsp Login / Cadastre-se </a>
-
-	</div>
-
-
-			<div class="top_menu">
-			
-				<ul>
-					
-					<div class="search">
-						<form >
-  							<input id="searchTextField" onkeypress="validateLength('searchTextField')" class="input-search" type="text" name="Busca" placeholder="Busque aqui..." maxlength="255" required>
-  							<input id="botaobusca" type="submit" value="Buscar">
-						</form> 
-					</div>
-					<li><img src="logo.gif" width="150px" height="60px"></li>
-  					<li ><a id="active" href="index.html" > <span class="glyphicon glyphicon-home" aria-hidden="true"></span> Início</a></li>
-	  				<li><a href="quemsomos.html"><span class="glyphicon glyphicon-book" aria-hidden="true"></span> Quem Somos </a></li>
-
-  					<li><a href="#"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span> Comentar um site</a></li>
-  					<li><a href="Categorias.html"><span class="glyphicon glyphicon-list" aria-hidden="true"></span> Categorias</a></li>
-  					<li><a href="promote.html"><span class="glyphicon glyphicon-usd" aria-hidden="true"></span> Promova seu site</a></li>
-					<li><a href="contatos.html"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Contato</a></li>
-  					<li>
-  					<!--
- 					 <select name="cars">
-    					<option value="meu blog"><a href="#">Meu Blog</a></option>
-    					<option value="gerenciar meus sites"><a href="#">Gerenciar meus sites</a></option>
-       					<option value="alterar minhas configurações"><a href="#">Alterar minhas configurações</a></option>
-  					</select>
-  					-->
-  					</li>
-
-
-  				</ul>  
-  				<hr>
-			
-			</div>	
 			
 			<div class="content">
 			<div class="container">
 
-				<div class="row">              
-					<div class="col-md-3"> 
+				<div class="row" >              
+					<div class="col-md-4" style="background: #EEE;"> 
 					<div class="comente"><h3>	Comente tudo o que quiser!</h3> 
 
-              <p> Inclua e comente links, vídeos, imagens e textos. Tenha seu blog e compartilhe. Comece agora!</p>
-              	</div>
+             		 <p> Inclua e comente links, vídeos, imagens e textos. Tenha seu blog e compartilhe. Comece agora!</p>
+              		</div>
 
 					   </div>
-					   	<div class="col-md-9">
+					   	<div class="col-md-8" style="background: #EEE;">
 					   	<div class="caixaLink"> 
 					   		<form >
 					   			<span class="glyphicon glyphicon-link" aria-hidden="true"></span>
-  							<input class="input-link" type="text" name="Link" placeholder="http://" required>
+  							<input id="postlink" class="input-link" type="text" name="Link" placeholder="http://" >
   							<input class="botao" type="submit" value="Incluir">
 
 						</form> 
 						</div>
 					   	</div>
 
-					   	<div class="row">
+					   <br><br>	
+					   	<div id="mainContent" class="row">
 					   		
-					   		<div class="col-md-3"> 
+					   		<div class="col-md-5"> 
 					   			<div class="maisacessados">
 					   				<h3> Mais acessados </h3>
-
+					   				<br>
 					   			</div>
 					   				<div class="descricao"> 
-											<p>Caldeirão do Huck | Programa | Gshow </p>
-											<p>caldeirão , huck , vídeos </p> 
-											<p>Fique por dentro de todas as novidades do programa Caldeirão do Huck com Luciano Huck </p> 
-											<p> caldeiraodohuck.globo.com </p> 
-										</div>
 
-					   		</div>
+					   					<div class="row">
+					   						<!-- FIM DE ITEM DA LISTA DE MAIS ACESSADOS -->
+					   						<div class="row">
+					   							<div class="col-md-6">
 
+					   								<img src="http://www.tvshow.com.br/wp-content/uploads/2017/04/Caldeir%C3%A3o-do-Huck-2017-e1493491740847.png" class="img-responsive" />
+					   							</div>
+					   							
+					   							<div class="col-md-6">
+					   								<h6>Caldeirão do Huck | Programa | Gshow </h6>
+													<h6>caldeirão , huck , vídeos </h6> 
+													<h6>Fique por dentro de todas as novidades do programa Caldeirão do Huck com Luciano Huck </h6> 
+													<h6> <a href="http://www.caldeiraodohuck.globo.com">Acesse já</a> </h6> 
+					   							</div>
+					   						</div>
+					   						<br>
+					   						<!-- FIM DE ITEM DA LISTA DE MAIS ACESSADOS -->
+					   						<div class="row">
+					   							<div class="col-md-6">
+
+					   								<img src="http://www.tvshow.com.br/wp-content/uploads/2017/04/Caldeir%C3%A3o-do-Huck-2017-e1493491740847.png" class="img-responsive" />
+					   							</div>
+					   							
+					   							<div class="col-md-6">
+					   								<h6>Caldeirão do Huck | Programa | Gshow </h6>
+													<h6>caldeirão , huck , vídeos </h6> 
+													<h6>Fique por dentro de todas as novidades do programa Caldeirão do Huck com Luciano Huck </h6> 
+													<h6> <a href="http://www.caldeiraodohuck.globo.com">Acesse já</a> </h6> 
+					   							</div>
+					   						</div>
+
+					   						<br>
+					   						<!-- FIM DE ITEM DA LISTA DE MAIS ACESSADOS -->
+					   						<div class="row">
+					   							<div class="col-md-6">
+
+					   								<img src="http://www.tvshow.com.br/wp-content/uploads/2017/04/Caldeir%C3%A3o-do-Huck-2017-e1493491740847.png" class="img-responsive" />
+					   							</div>
+					   							
+					   							<div class="col-md-6">
+					   								<h6>Caldeirão do Huck | Programa | Gshow </h6>
+													<h6>caldeirão , huck , vídeos </h6> 
+													<h6>Fique por dentro de todas as novidades do programa Caldeirão do Huck com Luciano Huck </h6> 
+													<h6> <a href="http://www.caldeiraodohuck.globo.com">Acesse já</a> </h6> 
+					   							</div>
+					   						</div>
+
+					   						<br>
+					   						<!-- FIM DE ITEM DA LISTA DE MAIS ACESSADOS -->
+					   						<div class="row">
+					   							<div class="col-md-6">
+
+					   								<img src="http://www.tvshow.com.br/wp-content/uploads/2017/04/Caldeir%C3%A3o-do-Huck-2017-e1493491740847.png" class="img-responsive" />
+					   							</div>
+					   							
+					   							<div class="col-md-6">
+					   								<h6>Caldeirão do Huck | Programa | Gshow </h6>
+													<h6>caldeirão , huck , vídeos </h6> 
+													<h6>Fique por dentro de todas as novidades do programa Caldeirão do Huck com Luciano Huck </h6> 
+													<h6> <a href="http://www.caldeiraodohuck.globo.com">Acesse já</a> </h6> 
+					   							</div>
+					   						</div>
+
+					   						<br>
+
+					   						<button onclick="" href="#" class="btn btn-success" > Ver Mais + </button>
+
+					   					</div> <!-- FIM DA LINHA PRINCIPAL QUE DEFINE AS LINHAS DE DENTRO. -->
+
+											
+									</div> 
+
+					   		</div> <!-- FIM DA PRIMEIRA COLUNA -->
+					   		<div class="col-md-1"></div>
+
+					   		<div class="col-md-5"> 
+					   			<div class="maisacessados">
+					   				<h3> Últimos Comentários</h3>
+					   				<br>
+					   			</div>
+					   				<div class="descricao_last"> 
+
+					   					<div class="row">
+					   						<div class="row">
+					   							29/10/17- por - <a href="http://www.arcadascaixas.com.br">Arca das Caixas</a>
+
+												<p> Caixas de Papelão Ondulado, 
+													Rolo de Papelão Ondulado, 
+													Plástico Bolha e Fita Aesiva.</p> 
+												<a href="#"> Ver Mais + </a> 
+					   						</div>
+					   						<br>
+					   						<!-- FIM DE ITEM DA LISTA DE MAIS ACESSADOS -->
+					   						<div class="row">
+					   							29/10/17- por - <a href="http://www.arcadascaixas.com.br">Arca das Caixas</a>
+
+												<p> Caixas de Papelão Ondulado, 
+													Rolo de Papelão Ondulado, 
+													Plástico Bolha e Fita Aesiva.</p> 
+												<a href="#"> Ver Mais + </a> 
+					   						</div>
+					   						<br>
+					   						<!-- FIM DE ITEM DA LISTA DE MAIS ACESSADOS -->
+					   						<div class="row">
+					   							29/10/17- por - <a href="http://www.arcadascaixas.com.br">Arca das Caixas</a>
+
+												<p> Caixas de Papelão Ondulado, 
+													Rolo de Papelão Ondulado, 
+													Plástico Bolha e Fita Aesiva.</p> 
+												<a href="#"> Ver Mais + </a> 
+					   						</div>
+					   						<br>
+					   						<!-- FIM DE ITEM DA LISTA DE MAIS ACESSADOS -->
+					   						<div class="row">
+					   							29/10/17- por - <a href="http://www.arcadascaixas.com.br">Arca das Caixas</a>
+
+												<p> Caixas de Papelão Ondulado, 
+													Rolo de Papelão Ondulado, 
+													Plástico Bolha e Fita Aesiva.</p> 
+												<a href="#"> Ver Mais + </a> 
+					   						</div>
+
+					   						<br>
+					   						<!-- FIM DE ITEM DA LISTA DE MAIS ACESSADOS -->
+					   						<div class="row">
+					   							29/10/17- por - <a href="http://www.arcadascaixas.com.br">Arca das Caixas</a>
+
+												<p> Caixas de Papelão Ondulado, 
+													Rolo de Papelão Ondulado, 
+													Plástico Bolha e Fita Aesiva.</p> 
+												<a href="#"> Ver Mais + </a> 
+					   						</div>
+
+					   						<br>
+					   						<!-- FIM DE ITEM DA LISTA DE MAIS ACESSADOS -->
+					   						<div class="row">
+					   							29/10/17- por - <a href="http://www.arcadascaixas.com.br">Arca das Caixas</a>
+
+												<p> Caixas de Papelão Ondulado, 
+													Rolo de Papelão Ondulado, 
+													Plástico Bolha e Fita Aesiva.</p> 
+												<a href="#"> Ver Mais + </a> 
+					   						</div>
+
+					   						<br>
+
+					   					</div> <!-- FIM DA LINHA PRINCIPAL QUE DEFINE AS LINHAS DE DENTRO. -->
+
+											
+									</div>
 
 					   	</div>
 
