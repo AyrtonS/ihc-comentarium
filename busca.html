@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="UTF-8" />
+
+
+<link rel="stylesheet" href="css/bootstrap-3.3.7-dist/css/bootstrap.css" />
+<link rel="stylesheet" href="css/style.css" />
+<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet"> 
+	
+<script src="js/angular.js"></script>	
+<script src="js/jquery-3.2.1.js"></script>
+<script src="js/functions.js"></script>
+<script type="text/javascript">
+	
+	$(document).ready(function(){
+
+		var i = 1+0.5;
+		$("#maiuscula").click(function(){
+			$(".body").css({"font-size": i+"em"});
+			i = i + 0.1;
+		});
+
+		$("#minuscula").click(function(){
+			i = i-0.1;
+			$(".body").css({"font-size": i+"em"})
+
+		});
+
+		$("#postlink").click(function(){
+			$("#menu").css({"opacity":"0.1"})
+			$("#mainContent").css({"opacity":"0.1"})
+		});
+
+	
+		$("#mainContent").click(function(){
+			$("#menu").css({"opacity":"1"})
+			$("#mainContent").css({"opacity":"1"})
+		});
+
+		$("#menu").click(function(){
+			$("#menu").css({"opacity":"1"})
+			$("#mainContent").css({"opacity":"1"})
+		});
+
+
+	});
+
+
+
+</script>	
+
+
+
+</head>	
+
+
+<body class="body" ng-app="">
+  <div id="menu" ng-include="'menu.html'"></div>
+
+			
+			<div class="content">
+			<h5 style="margin-left: 6%;">Você está em : <a href="index.html">Inicio</a> > <a href="busca">Resultado da busca</a></h5>
+
+			<hr>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 center">
+							<h2 class="">Resultado de busca</h2>
+					</div>
+
+				</div>
+
+			
+			<br>
+
+				<div class="row">
+					<div class="col-md-6">
+							<h4><a href="#">Titulo 1</a></h4>
+							<h5>Aqui pode ser a descrição do resultado da busca </h5>
+							<hr>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-md-6">
+							<h4><a href="#">Titulo 1</a></h4>
+							<h5>Aqui pode ser a descrição do resultado da busca </h5>
+							<hr>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+							<h4><a href="#">Titulo 1</a></h4>
+							<h5>Aqui pode ser a descrição do resultado da busca </h5>
+							<hr>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+							<h4><a href="#">Titulo 1</a></h4>
+							<h5>Aqui pode ser a descrição do resultado da busca </h5>
+							<hr>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+							<h4><a href="#">Titulo 1</a></h4>
+							<h5>Aqui pode ser a descrição do resultado da busca </h5>
+							<hr>
+					</div>
+				</div>
+
+
+
+			</div>
+
+
+
+			</div>
+
+
+ <div id="menu" ng-include="'rodape.html'"></div>
+
+</body>
+</html>			
