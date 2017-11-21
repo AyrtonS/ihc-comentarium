@@ -30,8 +30,6 @@ text-decoration: overline;
 }	
 
 .superior{
-
-	color: #fff;
 	text-align: right;
 	background: #000;
 	padding: 1.2%;
@@ -56,6 +54,7 @@ text-decoration: overline;
 	margin-right: 2%;
 	color: #fff;
 }
+
 
 .superior #lang{
 	color: #fff;
@@ -84,6 +83,7 @@ text-decoration: none;
 }
 .input-search{
 width: 70%;
+color: #000;
 border:1px solid #ccc;
 border-radius: 2px;
 padding: 2%;
@@ -133,6 +133,7 @@ text-align: center;
 	padding: 2%;
 	border-radius: 3px;
 	background: #1565c0;
+	color: #fff;
 }
 .search #botaobusca:hover {
 	background: #fff;
