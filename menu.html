@@ -12,7 +12,12 @@
 		
 		
 <div class="superior">
-	
+	<div class="search">
+						<form action="busca.html">
+  							<input id="searchTextField" onkeypress="validateLength('searchTextField')" class="input-search" type="text" name="Busca" placeholder="Busque aqui..." maxlength="255" required>
+  							<input id="botaobusca" type="submit" value="Buscar">
+						</form> 
+					</div>
 			<button id="maiuscula" >A +</button>
 			<button id="minuscula" >A -</button> 
 		<a id="login" href="login.html"><span class="glyphicon glyphicon-log-in" aria-hidden="true"></span>&nbsp Login / Cadastre-se </a>
@@ -24,12 +29,7 @@
 			
 				<ul>
 					
-					<div class="search">
-						<form action="busca.html">
-  							<input id="searchTextField" onkeypress="validateLength('searchTextField')" class="input-search" type="text" name="Busca" placeholder="Busque aqui..." maxlength="255" required>
-  							<input id="botaobusca" type="submit" value="Buscar">
-						</form> 
-					</div>
+					
 					<li><img src="logo.gif" width="150px" height="60px"></li>
   					<li ><a id="active" href="index.html" > <span class="glyphicon glyphicon-home" aria-hidden="true"></span> Início</a></li>
 	  				<li><a href="quemsomos.html"><span class="glyphicon glyphicon-book" aria-hidden="true"></span> Quem Somos </a></li>
