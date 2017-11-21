@@ -18,12 +18,15 @@
 	$(document).ready(function(){
 
 		var i = 1+0.5;
-		$("#maiuscula").click(function(){
+
+
+		$(".superior #maiuscula").click(function(){
+			
 			$(".body").css({"font-size": i+"em"});
 			i = i + 0.1;
 		});
 
-		$("#minuscula").click(function(){
+		$(".superior #minuscula").click(function(){
 			i = i-0.1;
 			$(".body").css({"font-size": i+"em"})
 
@@ -63,17 +66,20 @@
 			
 			<div class="content">
 			<h5 style="margin-left: 6%;">Você está em : <a href="index.html">Inicio</a></h5>
-			<div class="container">
+		
 
-				<div class="row" >              
-					<div class="col-md-4" style="background: #EEE;"> 
+				<div class="row" >    
+		
+					<div class="col-md-6" style="background: #EEE;"> 
 					<div class="comente"><h3>	Comente tudo o que quiser!</h3> 
 
              		 <p> Inclua e comente links, vídeos, imagens e textos. Tenha seu blog e compartilhe. Comece agora!</p>
               		</div>
 
 					   </div>
-					   	<div class="col-md-8" style="background: #EEE;">
+         
+					
+					   	<div class="col-md-6" style="background: #eee;">
 					   	<div class="caixaLink"> 
 					   		<form >
 					   			<span class="glyphicon glyphicon-link" aria-hidden="true"></span>
@@ -87,7 +93,7 @@
 					   <br><br>	
 					   	<div id="mainContent" class="row">
 					   		
-					   		<div class="col-md-5"> 
+					   		<div class="col-md-6" style="text-align: center;"> 
 					   			<div class="maisacessados">
 					   				<h3> Mais acessados </h3>
 					   				<br>
@@ -114,7 +120,7 @@
 					   						<div class="row">
 					   							<div class="col-md-6">
 
-					   								<img src="http://www.tvshow.com.br/wp-content/uploads/2017/04/Caldeir%C3%A3o-do-Huck-2017-e1493491740847.png" class="img-responsive" />
+					   								<img src="https://i.ytimg.com/vi/5WMcJkn4dqE/maxresdefault.jpg" class="img-responsive" />
 					   							</div>
 					   							
 					   							<div class="col-md-6">
@@ -130,7 +136,7 @@
 					   						<div class="row">
 					   							<div class="col-md-6">
 
-					   								<img src="http://www.tvshow.com.br/wp-content/uploads/2017/04/Caldeir%C3%A3o-do-Huck-2017-e1493491740847.png" class="img-responsive" />
+					   								<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/IBM_logo.svg/1200px-IBM_logo.svg.png" class="img-responsive" />
 					   							</div>
 					   							
 					   							<div class="col-md-6">
@@ -146,7 +152,7 @@
 					   						<div class="row">
 					   							<div class="col-md-6">
 
-					   								<img src="http://www.tvshow.com.br/wp-content/uploads/2017/04/Caldeir%C3%A3o-do-Huck-2017-e1493491740847.png" class="img-responsive" />
+					   								<img src="https://i.pinimg.com/originals/83/bf/62/83bf62a5e4a49a68f687400a0f5c0e26.png" class="img-responsive" />
 					   							</div>
 					   							
 					   							<div class="col-md-6">
@@ -169,7 +175,7 @@
 					   		</div> <!-- FIM DA PRIMEIRA COLUNA -->
 					   		<div class="col-md-1"></div>
 
-					   		<div class="col-md-5"> 
+					   		<div class="col-md-4"> 
 					   			<div class="maisacessados">
 					   				<h3> Últimos Comentários</h3>
 					   				<br>
@@ -257,7 +263,7 @@
 				</div>
 
 
-			</div>	
+			
 			
  <div ng-include="'rodape.html'"></div>
 	
